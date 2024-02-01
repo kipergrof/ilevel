@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/container" android:background="@android:color/black" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="@android:color/white" android:id="@+id/txtTitle_TRIM" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="15dp" android:text="@string/txt_title_trim"/>
+        <TextView android:textSize="18sp" android:textColor="@android:color/white" android:id="@+id/txtMsg_TRIM" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="4dp" android:layout_marginRight="5dp" android:text="@string/trim_mode_text" android:layout_below="@+id/txtTitle_TRIM"/>
+        <include layout="@layout/cb_sw_trim"/>
+    </RelativeLayout>
+</LinearLayout>

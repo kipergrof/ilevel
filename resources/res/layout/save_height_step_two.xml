@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/container" android:background="@android:color/black" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/sh2centerline" android:visibility="invisible" android:layout_width="0dp" android:layout_height="match_parent" android:layout_centerHorizontal="true"/>
+    <RelativeLayout android:layout_gravity="center" android:id="@+id/rLayoutFor_sh2Buttons" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_toLeftOf="@+id/sh2centerline">
+        <com.android.utility.ScalingLinearLayout android:gravity="center" android:id="@+id/sh2Scaling" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+            <RelativeLayout android:gravity="center" android:id="@+id/rLayoutForLeftButtons_SaveHeight2" android:layout_width="600px" android:layout_height="2208px" android:layout_toLeftOf="@+id/sh2centerline">
+                <com.android.ilevel.button.IlevelButton android:id="@+id/btn_03_SaveHeight2" android:background="@drawable/button_3" android:layout_width="379px" android:layout_height="569px" android:layout_marginBottom="-100px"/>
+                <com.android.ilevel.button.IlevelButton android:id="@+id/btn_02_SaveHeight2" android:background="@drawable/button_2" android:layout_width="379px" android:layout_height="535px" android:layout_below="@+id/btn_03_SaveHeight2"/>
+                <com.android.ilevel.button.IlevelButton android:id="@+id/btn_01_SaveHeight2" android:background="@drawable/button_1" android:layout_width="379px" android:layout_height="569px" android:layout_marginTop="-100px" android:layout_below="@+id/btn_02_SaveHeight2"/>
+                <ImageView android:id="@+id/btn_03_highlight_SaveHeight2" android:background="@drawable/btn3_flash" android:visibility="invisible" android:layout_width="450px" android:layout_height="650px" android:layout_marginLeft="-38px" android:layout_marginTop="-51px" android:layout_alignLeft="@+id/btn_03_SaveHeight2" android:layout_alignTop="@+id/btn_03_SaveHeight2" android:contentDescription="@null"/>
+                <ImageView android:id="@+id/btn_02_highlight_SaveHeight2" android:background="@drawable/btn2_flash" android:visibility="invisible" android:layout_width="450px" android:layout_height="650px" android:layout_marginLeft="-40px" android:layout_marginTop="-65px" android:layout_alignLeft="@+id/btn_02_SaveHeight2" android:layout_alignTop="@+id/btn_02_SaveHeight2" android:contentDescription="@null"/>
+                <ImageView android:id="@+id/btn_01_highlight_SaveHeight2" android:background="@drawable/btn1_flash" android:visibility="invisible" android:layout_width="450px" android:layout_height="650px" android:layout_marginLeft="-34px" android:layout_marginTop="-8px" android:layout_alignLeft="@+id/btn_01_SaveHeight2" android:layout_alignTop="@+id/btn_01_SaveHeight2" android:contentDescription="@null"/>
+            </RelativeLayout>
+        </com.android.utility.ScalingLinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center_horizontal" android:id="@+id/rLayoutParent" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="10dp" android:layout_toRightOf="@+id/sh2centerline">
+        <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="@android:color/white" android:id="@+id/txtStep_SaveHeight2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="@string/step_2"/>
+        <TextView android:textSize="18sp" android:id="@+id/txtStepMSG_SaveHeight2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="@string/save_height_step2_msg" android:layout_below="@+id/txtStep_SaveHeight2"/>
+        <Button android:id="@+id/btnSave_SaveHeight2" android:background="@drawable/black_button" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="Save" android:layout_below="@+id/txtStepMSG_SaveHeight2" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</RelativeLayout>

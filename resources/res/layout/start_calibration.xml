@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/container" android:background="@android:color/black" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:padding="2dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="@android:color/white" android:id="@+id/txtTitle_StartCalibration" android:paddingLeft="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/automatic_calibration"/>
+        <TextView android:textSize="18sp" android:textColor="@android:color/white" android:id="@+id/txtMSG_StartCalibration" android:paddingLeft="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginBottom="5dp" android:text="@string/start_calibration_detail"/>
+        <RelativeLayout android:id="@+id/rLayoutWarning_StartCalibration" android:background="@drawable/red_box" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginTop="4dp" android:layout_marginRight="8dp" android:layout_marginBottom="5dp">
+            <ImageView android:id="@+id/warningSymbol_StartCalibration" android:background="@drawable/warning" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="5dp"/>
+            <TextView android:textSize="18sp" android:textColor="@android:color/white" android:id="@+id/txtWarning_StartCalibration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:layout_marginTop="5dp" android:layout_marginRight="8dp" android:layout_marginBottom="2dp" android:text="@string/start_calibration_warning" android:layout_toRightOf="@+id/warningSymbol_StartCalibration"/>
+            <TextView android:id="@+id/txt" android:layout_width="wrap_content" android:layout_height="5dp" android:layout_below="@+id/txtWarning_StartCalibration"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rLayoutWarning_StartCalibration_Button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginTop="4dp" android:layout_marginRight="8dp" android:layout_marginBottom="5dp">
+            <Button android:textSize="22sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/btnStartCalibration" android:background="@drawable/green_button" android:padding="5dp" android:layout_width="280dp" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginTop="4dp" android:layout_marginRight="8dp" android:text="@string/start_calibration_now" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        <TextView android:layout_width="match_parent" android:layout_height="10dp"/>
+    </LinearLayout>
+</LinearLayout>

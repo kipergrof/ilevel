@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:id="@+id/idFooterMenu" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentBottom="true">
+        <Button android:id="@+id/footerBtn1" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Button1" android:layout_weight="1"/>
+        <Button android:id="@+id/footerBtn2" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Button2" android:layout_weight="1"/>
+        <TextView android:textSize="12sp" android:textColor="@android:color/white" android:gravity="bottom" android:layout_gravity="bottom" android:id="@+id/drawer_footer" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_margin="10dp" android:text="iLevel Menu" android:layout_alignParentBottom="true"/>
+    </LinearLayout>
+</RelativeLayout>

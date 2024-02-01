@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/caliberationNext" android:background="@android:color/black" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/rLayoutBody_CaliberationNext" android:padding="2dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="@android:color/white" android:id="@+id/txtTitle_CaliberationNext" android:paddingLeft="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/man_cal_sensor_title"/>
+        <TextView android:textSize="18sp" android:textColor="@android:color/white" android:id="@+id/txtMSG_CaliberationNext" android:paddingLeft="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginBottom="5dp" android:text="@string/automatic_calibration_next_msg" android:layout_below="@+id/txtTitle_CaliberationNext"/>
+        <RelativeLayout android:id="@+id/rLayoutWarning_CaliberationNext" android:background="@drawable/yellow_box" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginTop="5dp" android:layout_marginRight="8dp" android:layout_marginBottom="5dp" android:layout_below="@+id/txtMSG_CaliberationNext">
+            <ImageView android:id="@+id/warningSymbol_CalibrationNext" android:background="@drawable/warning" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="5dp"/>
+            <TextView android:textSize="18sp" android:textColor="@android:color/black" android:id="@+id/txtWarning_CaliberationNext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8dp" android:text="@string/automatic_calibration_warning_next" android:layout_toRightOf="@+id/warningSymbol_CalibrationNext"/>
+            <View android:layout_width="wrap_content" android:layout_height="5dp" android:layout_below="@+id/txtWarning_CaliberationNext"/>
+        </RelativeLayout>
+        <ImageView android:id="@+id/devider_CaliberationNext" android:background="@drawable/divider" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_below="@+id/rLayoutWarning_CaliberationNext"/>
+        <RelativeLayout android:id="@+id/rLayout_CaliberationNext" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="40dp" android:layout_below="@+id/devider_CaliberationNext">
+            <TextView android:textSize="18sp" android:textColor="@android:color/white" android:id="@+id/txt_proceed_CaliberationNext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="@string/proceed" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+            <ImageButton android:id="@+id/img_btn_arrow" android:background="@drawable/right_arrow_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

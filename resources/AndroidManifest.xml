@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="5" android:versionName="1.2" package="com.ideasthatfloat.ilevel">
+    <uses-sdk android:minSdkVersion="11" android:targetSdkVersion="25"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <meta-data android:name="android.support.VERSION" android:value="25.3.1"/>
+    <application android:theme="@style/AppBaseThemeNoTitleBar" android:label="@string/app_name" android:icon="@mipmap/ic_launcher" android:name="com.android.application.ILevelApplication" android:allowBackup="true">
+        <activity android:theme="@style/AppBaseThemeNoTitleBar" android:label="@string/app_name" android:name="com.android.ilevel.HomeScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Theme.Holo" android:label="@string/label_calibration" android:name="com.android.ilevel.Calibration" android:configChanges="orientation|screenSize" android:parentActivityName="com.android.ilevel.HomeScreen">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.android.ilevel.HomeScreen"/>
+        </activity>
+        <activity android:theme="@style/Theme.Holo" android:label="@string/label_save_heights" android:name="com.android.ilevel.Save_Heights" android:configChanges="orientation|screenSize" android:parentActivityName="com.android.ilevel.HomeScreen">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.android.ilevel.HomeScreen"/>
+        </activity>
+        <activity android:theme="@style/Theme.Holo" android:label="@string/label_settings" android:name="com.android.ilevel.Settings" android:configChanges="orientation|screenSize" android:parentActivityName="com.android.ilevel.HomeScreen">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.android.ilevel.HomeScreen"/>
+        </activity>
+        <activity android:theme="@style/Theme.Holo" android:label="@string/label_password" android:name="com.android.ilevel.Password" android:configChanges="orientation|screenSize" android:parentActivityName="com.android.ilevel.HomeScreen">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.android.ilevel.HomeScreen"/>
+        </activity>
+        <activity android:theme="@style/Theme.Holo" android:label="@string/label_password" android:icon="@drawable/ilevel_logo" android:name="com.android.ilevel.PasswordAlt" android:configChanges="orientation|screenSize" android:parentActivityName="com.android.ilevel.HomeScreen">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.android.ilevel.HomeScreen"/>
+        </activity>
+        <activity android:theme="@style/Theme.Holo" android:label="@string/label_calibration" android:name="com.android.ilevel.Automatic_Calibration" android:configChanges="orientation|screenSize" android:parentActivityName="com.android.ilevel.HomeScreen">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.android.ilevel.HomeScreen"/>
+        </activity>
+        <activity android:theme="@style/Theme.Holo" android:label="@string/label_save_heights" android:name="com.android.ilevel.Save_Heights_Step_Two" android:configChanges="orientation|screenSize" android:parentActivityName="com.android.ilevel.HomeScreen">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.android.ilevel.HomeScreen"/>
+        </activity>
+        <activity android:theme="@style/Theme.Holo" android:label="@string/label_calibration" android:name="com.android.ilevel.Start_Calibration" android:configChanges="orientation|screenSize" android:parentActivityName="com.android.ilevel.HomeScreen">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.android.ilevel.HomeScreen"/>
+        </activity>
+        <activity android:theme="@style/Theme.Holo" android:label="@string/label_calibration" android:name="com.android.ilevel.Abort_Calibration" android:configChanges="orientation|screenSize" android:parentActivityName="com.android.ilevel.HomeScreen">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.android.ilevel.HomeScreen"/>
+        </activity>
+        <activity android:theme="@style/Theme.Holo" android:label="@string/label_RHOS" android:name="com.android.ilevel.Ride_Heigh_On_Start" android:configChanges="orientation|screenSize" android:parentActivityName="com.android.ilevel.Settings">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.android.ilevel.Settings"/>
+        </activity>
+        <activity android:theme="@style/Theme.Holo" android:label="@string/label_RMM" android:name="com.android.ilevel.Right_Monitor_Mode" android:configChanges="orientation|screenSize" android:parentActivityName="com.android.ilevel.HomeScreen">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.android.ilevel.HomeScreen"/>
+        </activity>
+        <activity android:theme="@style/Theme.Holo" android:label="@string/label_RMA" android:name="com.android.ilevel.Ride_Mode_Accuracy" android:configChanges="orientation|screenSize" android:parentActivityName="com.android.ilevel.HomeScreen">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.android.ilevel.HomeScreen"/>
+        </activity>
+        <activity android:theme="@style/Theme.Holo" android:label="@string/label_TM" android:name="com.android.ilevel.Trim_Mode" android:configChanges="orientation|screenSize" android:parentActivityName="com.android.ilevel.HomeScreen">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.android.ilevel.HomeScreen"/>
+        </activity>
+        <activity android:theme="@style/Theme.Holo" android:label="@string/label_TPM" android:name="com.android.ilevel.Tank_Pressure_Mode" android:configChanges="orientation|screenSize" android:parentActivityName="com.android.ilevel.HomeScreen">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.android.ilevel.HomeScreen"/>
+        </activity>
+        <activity android:theme="@style/Theme.Holo" android:label="@string/label_calibration" android:name="com.android.ilevel.Calibration_Next" android:configChanges="orientation|screenSize" android:parentActivityName="com.android.ilevel.HomeScreen">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.android.ilevel.HomeScreen"/>
+        </activity>
+        <activity android:theme="@style/Theme.Holo" android:label="@string/app_name" android:name="com.android.ilevel.Manul7in2" android:configChanges="orientation|screenSize" android:parentActivityName="com.android.ilevel.HomeScreen">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.android.ilevel.HomeScreen"/>
+        </activity>
+    </application>
+</manifest>

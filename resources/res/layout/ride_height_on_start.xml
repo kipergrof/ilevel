@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/container" android:background="@android:color/black" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include layout="@layout/cb_sw_rhos"/>
+        <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="@android:color/white" android:id="@+id/txtTitleRHOS" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="15dp" android:text="@string/txt_title_rhos" android:layout_toLeftOf="@+id/switch_rhos" android:layout_alignParentLeft="true"/>
+        <TextView android:textSize="18sp" android:textColor="@android:color/white" android:id="@+id/txtRHOS_Msg" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="4dp" android:layout_marginRight="5dp" android:text="@string/rhos_text" android:layout_below="@+id/txtTitleRHOS"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/container" android:background="@android:color/black" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="@android:color/white" android:id="@+id/txtTitle_RMMA" android:paddingLeft="5dp" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/ride_monitor_accuracy_title"/>
+        <TextView android:textSize="18sp" android:textColor="@android:color/white" android:id="@+id/txtMSG_RMMA" android:paddingLeft="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/ride_monitor_accuracy_body"/>
+        <ImageView android:background="@drawable/divider" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp"/>
+        <ListView android:id="@+id/list_view_ride_mode_accuracy" android:layout_width="match_parent" android:layout_height="wrap_content" android:cacheColorHint="@android:color/transparent"/>
+    </LinearLayout>
+</LinearLayout>

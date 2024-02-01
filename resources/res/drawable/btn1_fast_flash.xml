@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/btn1_flash" android:oneshot="false">
+    <item android:duration="125" android:drawable="@drawable/button_1_highlited"/>
+    <item android:duration="125" android:drawable="@drawable/transparent"/>
+</animation-list>
